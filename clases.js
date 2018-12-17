@@ -40,7 +40,7 @@ class Pagina{
     
 
 
-	mostrarEnHTML(nodoHTML){
+	mostrarHTML(nodoHTML){
 		let cuerpo = document.createElement('div');
         cuerpo.className = 'appWeb';
         
