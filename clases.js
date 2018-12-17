@@ -50,6 +50,7 @@ class Pagina {
     mostrarHTML(nHTML) {
         let cuerpo = document.createElement('div');
         cuerpo.className = 'appWeb';
+        cuerpo.style.border = 'solid';
 
         let nombreAplWeb = document.createElement('h1');
         nombreAplWeb.innerHTML = this.nombreAplWeb;
@@ -84,3 +85,35 @@ pag1.mostrarHTML(divWapo);
 let pag2 = new Pagina(" Memeverso ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
 
 pag2.mostrarHTML(divWapo);
+
+let pag3 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag3.mostrarHTML(divWapo);
+
+let pag4 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag4.mostrarHTML(divWapo);
+
+let pag5 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag5.mostrarHTML(divWapo);
+
+let pag6 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag6.mostrarHTML(divWapo);
+
+let pag7 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag7.mostrarHTML(divWapo);
+
+let pag8 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag8.mostrarHTML(divWapo);
+
+let pag9 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag9.mostrarHTML(divWapo);
+
+let pag10 = new Pagina(" relleno ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag10.mostrarHTML(divWapo);
