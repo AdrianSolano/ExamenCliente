@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         validarCampo(event.target, comprobarCodigo);
     });
     inputCondiciones.addEventListener("click", function (event) {
-        validarCampo(event, target, comprobarCondiciones);
+        comprobarInput(event, target, comprobarCondiciones);
     });
 
     form.addEventListener("submit", function (event) {
@@ -92,7 +92,7 @@ function comprobarNombreApellidoDes() {
     let error = [];
     let expresion = /^[A-z]+[ ]+[A-z]+[ ]+[A-z]+$/g;
     if (!expresion.test(inputNombreApellidoDes.value)) {
-        error.push("El nombre no cumple con los requisitos");
+        error.push("El nombre y apellido no cumple con los requisitos");
     }
     return error;
 }

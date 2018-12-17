@@ -1,9 +1,10 @@
 class Pagina{
-	constructor(nombreAplWeb,codigo,nomApeDes,tema){
+	constructor(nombreAplWeb,codigo,nomApeDes,tema,lenguaje){
         this.nombreAplWeb = nombreAplWeb;
         this.codigo = codigo;
         this.nomApeDes = nomApeDes;
         this.tema = tema;
+        this.lenguaje = lenguaje;
 	}
 	
 	get nombreAplWeb(){
@@ -37,6 +38,14 @@ class Pagina{
 	set tema(tema){
 		this._tema = tema;
     }
+
+    get lenguaje(){
+		return this._lenguaje;
+	}
+
+	set lenguaje(lenguaje){
+		this._lenguaje = lenguaje;
+    }
     
 
 
@@ -50,13 +59,17 @@ class Pagina{
         codigo.innerHTML = this.codigo;
         let nomApeDes = document.createElement('i');
         nomApeDes.innerHTML = this.nomApeDes;
-		
-		let descripcion = document.createElement('p');
-        descripcion.innerHTML = this.descripcion;
+		let tema = document.createElement('p');
+        tema.innerHTML = this.tema;
+        tema.className("azul");
+        let lenguaje = document.createElement('p');
+        lenguaje.innerHTML = this.lenguaje;
+        lenguaje.className("naranja")
         
 		cuerpo.append(nombreAplWeb);
         cuerpo.append(codigo);
         cuerpo.append(nomApeDes);
+        cuerpo.append(tema);
 		nHTML.appendChild(cuerpo);
 	}
 }
