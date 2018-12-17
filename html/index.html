@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MBT!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../script.js" cache="false" defer></script>
 </head>
 
 <body>
+<div class="etiqueta">
     <h2>Aplicacion Web</h2>
-    <form id="formulario" action="/js/funciones/script.js" method="POST">
-        <div class="elementoFormulario">
+</div>
+    <form id="form" action="todobien.html" method="POST">
+        <div class="elementoform">
             <div class="etiqueta">
-                <label for="nombre">Nombre de la aplicacion:</label>
+                <label for="nombreA">Nombre de la aplicacion:</label>
             </div>
-            <input id="nombre" type="text" />
+            <input id="nombreA" type="text" />
         </div>
-        <div class="elementoFormulario">
+        <div class="elementoform">
             <div class="etiqueta">
                 <label for="categoria">Tema de la aplicación Web:</label>
             </div>
@@ -27,25 +31,43 @@
                 <option value="peliculas">Peliculas</option>
             </select>
         </div>
-        <div class="elementoFormulario">
+        <div class="elementoform">
             <div class="etiqueta">
-                <label for="lenguaje">Lenguaje de programación usado para la aplicación Web:</label>
+                <label for="lenguaje">Lenguaje de programación:</label>
             </div>
             <input id="lenguaje" type="text" />
         </div>
-        <div class="elementoFormulario">
+        <div class="elementoform">
             <div class="etiqueta">
-                <label for="jefe">JEFE:</label>
+                <label for="horas">Horas dedicadas al proyecto:</label>
             </div>
-            <input id="jefe" type="text" />
+            <input id="horas" type="text" />
+        </div>
+        <div class="elementoform">
+            <div class="etiqueta">
+                <label for="nombreApellidoDes">Nombre y Apellido desarrollador:</label>
+            </div>
+            <input id="nombreApellidoDes" type="text" />
+        </div>
+        <div class="elementoform">
+            <div class="etiqueta">
+                <label for="dni">DNI del desarrollador:</label>
+            </div>
+            <input id="dni" type="text" />
+        </div>
+        <div class="elementoform">
+            <div class="etiqueta">
+                <label for="codigo">Código único del proyecto:</label>
+            </div>
+            <input id="codigo" type="text" />
+        </div>
+        <div class="elementoform">
+            <label>Aceptar Condiciones de uso</label>
+            <input type="checkbox" id="condiciones" value="1" />
         </div>
 
-        <div class="elementoFormulario">
-            <label>Aceptar Terminos</label>
-            <input type="checkbox" id="terminos" value="1" />
-        </div>
-        <div class="botones">
-            <button>ENVIAR DATOS</button>
+        <div class="boton">
+            <button>Send</button>
         </div>
     </form>
 

@@ -1,0 +1,38 @@
+#form{
+    width:auto;
+    margin:auto;
+}
+
+.elementoform{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    margin:3px;
+}
+
+.etiqueta{
+    width:200px;
+}
+
+.elementoform input{
+    width:200px;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top:10px;
+}
+
+.valido{
+    border:1px solid green;
+}
+
+.invalido{
+    border:1px solid red;
+}
+
+.error{
+    color:red;
+}
