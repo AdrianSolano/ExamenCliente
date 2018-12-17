@@ -69,6 +69,7 @@ class Pagina {
         cuerpo.append(codigo);
         cuerpo.append(nomApeDes);
         cuerpo.append(tema);
+        cuerpo.append(lenguaje);
         nHTML.appendChild(cuerpo);
     }
 
@@ -76,6 +77,10 @@ class Pagina {
 }
 
 
-let pag1 = new Pagina(" Lmao The Animation ", " #F0F0F0 ", " Adrian Solano Fernadez ", " VideoGumes ", "PeAchePe");
+let pag1 = new Pagina(" Pax Romana ", " #F0F0F0 ", " Adrian Solano Fernadez ", " VideoGumes ", "PeAchePe");
 let divWapo = document.getElementById("kurwa");
 pag1.mostrarHTML(divWapo);
+
+let pag2 = new Pagina(" Memeverso ", " #F1F0F0 ", " Alcampo Mercadona Carrefour ", " Deportes ", "Jeve");
+
+pag2.mostrarHTML(divWapo);

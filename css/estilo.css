@@ -48,3 +48,7 @@ body{
 .negrita{
     font-weight: bolder;
 }
+
+div{
+    border: thick;
+}
