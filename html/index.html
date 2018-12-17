@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MBT!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h2>Aplicacion Web</h2>
+    <form id="formulario" action="/js/funciones/script.js" method="POST">
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="nombre">Nombre de la aplicacion:</label>
+            </div>
+            <input id="nombre" type="text" />
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="categoria">Tema de la aplicación Web:</label>
+            </div>
+            <select id="categoriaWeb" type="text">
+                <option value=""></option>
+                <option value="videojuegos">Videojuegos</option>
+                <option value="deportes">Deportes</option>
+                <option value="peliculas">Peliculas</option>
+            </select>
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="lenguaje">Lenguaje de programación usado para la aplicación Web:</label>
+            </div>
+            <input id="lenguaje" type="text" />
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="jefe">JEFE:</label>
+            </div>
+            <input id="jefe" type="text" />
+        </div>
+
+        <div class="elementoFormulario">
+            <label>Aceptar Terminos</label>
+            <input type="checkbox" id="terminos" value="1" />
+        </div>
+        <div class="botones">
+            <button>ENVIAR DATOS</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
