@@ -40,7 +40,7 @@ class Pagina{
     
 
 
-	mostrarHTML(nodoHTML){
+	mostrarHTML(nHTML){
 		let cuerpo = document.createElement('div');
         cuerpo.className = 'appWeb';
         
@@ -57,6 +57,6 @@ class Pagina{
 		cuerpo.append(nombreAplWeb);
         cuerpo.append(codigo);
         cuerpo.append(nomApeDes);
-		nodoHTML.appendChild(cuerpo);
+		nHTML.appendChild(cuerpo);
 	}
 }
