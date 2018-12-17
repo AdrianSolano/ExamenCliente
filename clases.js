@@ -55,14 +55,15 @@ class Pagina {
         nombreAplWeb.innerHTML = this.nombreAplWeb;
         let codigo = document.createElement('a');
         codigo.innerHTML = this.codigo;
+        codigo.className="negrita";
         let nomApeDes = document.createElement('i');
         nomApeDes.innerHTML = this.nomApeDes;
         let tema = document.createElement('p');
         tema.innerHTML = this.tema;
-        // tema.className("azul");
+        tema.className="azul";
         let lenguaje = document.createElement('p');
         lenguaje.innerHTML = this.lenguaje;
-        // lenguaje.className("naranja")
+        lenguaje.className="naranja";
 
         cuerpo.append(nombreAplWeb);
         cuerpo.append(codigo);
@@ -75,6 +76,6 @@ class Pagina {
 }
 
 
-let pag1 = new Pagina("Lmao", "#F0F0F0", "Adrian Solano Fernadez", "VideoGumes", "PeAchePe");
+let pag1 = new Pagina(" Lmao The Animation ", " #F0F0F0 ", " Adrian Solano Fernadez ", " VideoGumes ", "PeAchePe");
 let divWapo = document.getElementById("kurwa");
 pag1.mostrarHTML(divWapo);
