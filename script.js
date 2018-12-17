@@ -79,7 +79,7 @@ function comprobarHoras() {
     if (expresion.test(inputHoras.value)
     ) {
         let valor = parseInt(inputHoras.value);
-        if (valor < 100 && valor > 200) {
+        if (valor > 100) {
             error.push("No puede ser inferior a 200, ni superior a 100");
         }
     } else {
@@ -109,7 +109,7 @@ function comprobarDni() {
     let error = [];
     let expresion = /[0-9]{7,8}\-?[A-z]{1}\b/g;
     if (!expresion.test(inputDni.value)) {
-        error.push("DNI invalido DNI valido=12345678-Z");
+        error.push("DNI invalido Estilo de DNI valido=12345678-Z");
     }
     return error;
 }
