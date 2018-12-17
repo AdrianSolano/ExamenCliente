@@ -8,7 +8,7 @@ let inputCodigo = document.getElementById("codigo");
 let inputCondiciones = document.getElementById("condiciones");
 let form = document.getElementById("form");
 
-//Cargar DOM
+
 document.addEventListener("DOMContentLoaded", function (event) {
     inputNombreA.addEventListener("keydown", function (event) {
         comprobarInput(event, comprobarNombreA);
